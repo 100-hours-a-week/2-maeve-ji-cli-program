@@ -24,8 +24,14 @@ public class GameManager {
                 switch (choice) {
                     case 1:
                         player.attack(monster);
+                        if (monster.isAlive()) {
+                            monster.attack(player, false);
+                        }
                         break;
                     case 2:
+                        if (monster.isAlive()) {
+                            monster.attack(player, true);
+                        }
                         break;
                     case 3:
                         System.out.println(player.name + "이(가) " + potion.getName() + "을(를) 사용하여 HP 회복!");
@@ -38,10 +44,10 @@ public class GameManager {
                         System.out.println("잘못된 입력입니다. 다시 선택하세요.");
                         continue;
                 }
-
-                if (monster.isAlive()) {
-                    monster.attack(player, false);
-                }
+//
+//                if (monster.isAlive()) {
+//                    monster.attack(player, false);
+//                }
 
                 if (!player.isAlive()) {
                     System.out.println("💀 " + player.name + "이(가) 쓰러졌습니다... 게임 오버!");
