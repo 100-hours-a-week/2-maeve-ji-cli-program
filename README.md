@@ -3,7 +3,7 @@
 간단한 RPG 게임
 
 ### 클래스 다이어그램
-
+![Image](https://github.com/user-attachments/assets/b8d40a21-212b-4c5c-b0a5-95fce92c9f52)
 
 ## 시나리오
 1. 캐릭터 생성
