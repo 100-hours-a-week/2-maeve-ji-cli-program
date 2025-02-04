@@ -12,9 +12,10 @@ public class Monster extends Character {
         return expDrop;
     }
 
-    public Item getDropItem() {
-        return dropItem;
-    }
+//    public Item getDropItem() {
+//        return dropItem;
+//    }
+
     public void attack(Character target, boolean targetDefending) {
         int damage = targetDefending ? attack / 2 : attack; // 방어 시 피해 절반
         if (targetDefending) {
