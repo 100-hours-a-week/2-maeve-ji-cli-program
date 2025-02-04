@@ -15,7 +15,8 @@ public class Player extends Character {
         if (hp > 100) {
             hp = 100;
             System.out.println(name + "이(가) HP를 최대치로 회복하였습니다! 현재 HP: " + hp);
+        } else {
+            System.out.println(name + "이(가) HP를 " + amount + " 회복했습니다! 현재 HP: " + hp);
         }
-        System.out.println(name + "이(가) HP를 " + amount + " 회복했습니다! 현재 HP: " + hp);
     }
 }

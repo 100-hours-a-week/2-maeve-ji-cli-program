@@ -15,4 +15,8 @@ public class Entity {
     public boolean isAlive() {
         return hp > 0;
     }
+
+    public String getName(){
+        return name;
+    }
 }

@@ -12,7 +12,7 @@ public class GameManager {
         player.showStats();
 
         while (true) {
-            Item potion = new Item("체력 포션", "HP +20", 20);
+            Item potion = new Item("체력 포션", "HP +15", 15);
             Monster monster = new Monster("고블린", 50, 8, 5, potion);
             System.out.println("🔥 야생의 " + monster.name + "이(가) 나타났다!");
 
@@ -44,10 +44,6 @@ public class GameManager {
                         System.out.println("잘못된 입력입니다. 다시 선택하세요.");
                         continue;
                 }
-//
-//                if (monster.isAlive()) {
-//                    monster.attack(player, false);
-//                }
 
                 if (!player.isAlive()) {
                     System.out.println("💀 " + player.name + "이(가) 쓰러졌습니다... 게임 오버!");
@@ -65,7 +61,6 @@ public class GameManager {
                 break;
             }
         }
-
         scanner.close();
     }
 }
